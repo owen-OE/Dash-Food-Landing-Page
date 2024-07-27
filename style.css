@@ -1,0 +1,227 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+body{
+   margin: auto;
+    background-color: #f7f7ff;
+    font-family: Montserrat, sans-serif;
+}
+main{
+    width: 85%;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+/*nav bar*/
+nav img{
+    height: 70px;
+    width: 100px;
+}
+
+/*bacground image and separating each columns*/
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 30px;
+    background-image: url(images/bg-image/scooter.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-bottom: 70px;
+}
+
+.main-container > div {
+    width: 30%;
+}
+
+.image-container img{
+    display: none;
+}
+
+
+/*Left part of main div*/
+.main-title{
+    font-size: 58px;
+    color: #333131;
+    font-family: Montserrat, sans-serif;
+    padding-top: 25px;
+    margin: 0;
+}
+
+.sub-title{
+    font-size: 17px;
+    padding-top: 10px;
+}
+
+/*Right part of main div(Form)*/
+.form-container {
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 10px 10px 5px rgba(62, 62, 62, 0.47);
+    width: 300px;
+}
+
+.form-title{
+    font-size: 36px;
+    margin-bottom: 10px;
+    margin: 0;
+}
+.form-container p{
+    font-size: 18px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 0px solid #b2b2bd;
+    border-radius: 5px;
+    background-color: #f7f7ff;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.check-container{
+    display: inline-flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+ width: 20px;
+ height: 30px;
+}
+
+.check-container label{
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+.btn {
+    padding: 10px 15px;
+    background-color: #57eeab;
+    color: #333131;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.form-container .form-link{
+    text-align: center;
+    font-size: 12px;
+}
+
+.form-link a{
+    color: orange;
+    text-decoration: none;
+}
+
+
+
+/*Footer*/
+footer{
+    background-color: #fffd8c;
+    position: static;
+    padding: 0px 0px 40px 0px;
+    width: 100%;
+}
+
+.footer-container{
+    width: 85%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+
+.footer-icons{
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer-icons img{
+    padding: 20px;
+    width: 8%;
+} 
+.footer-header{
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer-light{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.input-items input[type="number"]{
+    padding: 7px;
+    background-color: #f7f7ff;
+    width: 80px;
+    border: none;
+}
+
+
+.input-items input[type="text"]{
+    padding: 7px;
+    background-color: #f7f7ff;
+    width:180px;
+    border: none;
+}
+
+.input-items button{
+        padding: 7px 15px;
+        background-color: #ff8480;
+        color: #f7f7ff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 17px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+}
+
+
+/* MEDIA QUERIES*/
+@media (max-width:768px) {
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-image: none;
+    }
+    .main-container > div{
+        width: 80%;
+    }
+    footer{
+        position: static;
+        padding: 0px 0px 40px 0px;
+    }
+    .image-container img{
+        display: block;
+        
+    }
+}
+
